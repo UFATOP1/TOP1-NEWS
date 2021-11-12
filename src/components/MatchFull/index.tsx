@@ -13,7 +13,7 @@ const MatchFull: FC<{ game: IGame }> = ({ game }) => {
         {game.title}
       </Typography>
       <Typography variant="body2" component="p">
-        {game.competition.name}
+         <a ref="follow" href="https://ufapro888s.info/">ทางเข้าหลักUFABET {game.competition.name}</a>
         <br />
         <Moment format="DD MMMM YYYY - HH:mm">{game.date}</Moment>
       </Typography>
