@@ -41,7 +41,7 @@ const Header: FC<IProps> = ({ title, filterGamesByText }) => {
               {/* <SportsSoccerIcon />  */}
             <img 
             src="https://ufapro888s.co/wp-content/uploads/2021/07/cropped-LOGO.png"
-            alt="ทางเข้า UFABET"  width="25%"
+            alt="ทางเข้า UFABET"  width="15%"
             />{title}
             </Link>
           </Typography>
