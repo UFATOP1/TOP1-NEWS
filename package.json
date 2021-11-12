@@ -1,5 +1,5 @@
 {
-  "name": "football-data-ufax",
+  "name": "football-data",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,14 +14,13 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.5",
     "axios": "^0.21.1",
-    "global": "^4.4.0",
     "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-moment": "^0.9.7",
-    "react-native": "^0.65.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "react-share": "^4.4.0",
     "typescript": "~3.7.2"
   },
   "scripts": {

@@ -1,24 +1,19 @@
 import React, { FC, useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
-import companyLogo from './logo.png';
 import {
   AppBar,
   Link,
   Toolbar,
   Typography,
-  Button,
   InputBase,
 } from "@material-ui/core";
 //import SportsSoccerIcon from "@material-ui/icons/SportsSoccer";
-import SearchIcon from "@material-ui/icons/Search";
 
-//import { View, Image, StyleSheet } from 'react';
+import SearchIcon from "@material-ui/icons/Search";
 
 import { withGame, IGameState } from "../../store/GameProvider";
 
-
 import useStyles from "./styles";
-
 
 interface IProps extends IGameState {
   title: string;
@@ -37,25 +32,25 @@ const Header: FC<IProps> = ({ title, filterGamesByText }) => {
     filterGamesByText(searchText);
   };
 
-
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="transparent">
+      <AppBar position="static" color="primary">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            <Link component={RouterLink} to="/" color="primary">
-            <img src={companyLogo} width="50px" alt="UFATOP1 logo"/> :: {title}
+            <Link component={RouterLink} to="/" color="inherit">
+              {/* <SportsSoccerIcon />  */}
+            <img 
+            src="https://ufapro888s.co/wp-content/uploads/2021/07/cropped-LOGO.png"
+            alt="ทางเข้า UFABET"  width="25%"
+            />{title}
             </Link>
           </Typography>
-          <div>
-         <Button size="small" color="primary" variant="outlined" onClick={()=> window.open("someLink", "#")}>สาวไทย น่ารัก</Button>
-          </div>
           <form className={classes.search} onSubmit={handleSubmit}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="ค้นหา highlight…"
+              placeholder="ค้นหา..."
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,

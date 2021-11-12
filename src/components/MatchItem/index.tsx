@@ -11,6 +11,8 @@ import {
   Typography,
 } from "@material-ui/core";
 
+
+
 import IGame from "../../types/Game";
 import useStyles from "./styles";
 
@@ -23,26 +25,46 @@ const MatchItem: FC<IGame> = ({
 }) => {
   const classes = useStyles();
   return (
-    <Card className={classes.root} >
+    // <Card variant="outlined" className={classes.root}>
+    //   <CardActionArea>
+    //     <CardMedia className={classes.media} image={thumbnail} title={title} />
+    //     <CardContent>
+    //       <Typography gutterBottom variant="h5" component="h3">
+    //         {title}
+    //       </Typography>
+    //       <Typography variant="body2" color="textSecondary" component="p">
+    //         {name}
+    //         <br />
+    //         <Moment format="DD MMMM YYYY - HH:mm">{date}</Moment>
+    //       </Typography>
+    //     </CardContent>
+    //   </CardActionArea>
+    //   <CardActions>
+      
+    //   <Button variant="contained" size="small" color="secondary" component={Link} to={"/" + id}>
+    //       ดู Highlight
+    //     </Button>
+    //   </CardActions>
+    // </Card>
+    <Card variant="outlined" className={classes.root}>
       <CardActionArea>
-        <CardMedia className={classes.media} image={thumbnail} title={title} component={Link} to={"/" + id}/>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h3">
-            {title} 
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {name}
-            <br />
-            <Moment format="DD MMMM YYYY - HH:mm">{date}</Moment>
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary" variant="outlined" component={Link} to={"/" + id}>
-          ชม highlight
-        </Button>
-      </CardActions>
-    </Card>
+    <CardMedia  className={classes.media} image={thumbnail} title={title} />
+    <CardContent>
+          <Typography gutterBottom variant="h5" color="secondary" component="h6">
+             {title}
+           </Typography>
+           <Typography variant="body2" color="textSecondary" component="p">
+             {name}
+             <br />
+             <Moment format="DD MMMM YYYY - HH:mm">{date}</Moment>
+           </Typography>
+         </CardContent>
+       </CardActionArea>
+    <CardActions>
+    <Button variant="contained" size="small" color="secondary" component={Link} to={"/" + id}> ดู Highlight </Button>
+    
+    </CardActions>
+  </Card>
   );
 };
 

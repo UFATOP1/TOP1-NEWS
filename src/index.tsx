@@ -2,9 +2,9 @@ import React from "react";
 import { render } from "react-dom";
 
 import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+//import * as serviceWorker from "./serviceWorker";
 import GameProvider from "./store/GameProvider";
-
+import './index.css'
 render(
   <React.StrictMode>
     <GameProvider>
@@ -14,4 +14,4 @@ render(
   document.getElementById("root")
 );
 
-serviceWorker.unregister();
+//serviceWorker.unregister();

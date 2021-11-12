@@ -12,7 +12,7 @@ const MatchFull: FC<{ game: IGame }> = ({ game }) => {
       <Typography gutterBottom variant="h5" component="h3">
         {game.title}
       </Typography>
-      <Typography variant="body2" color="textSecondary" component="p">
+      <Typography variant="body2" component="p">
         {game.competition.name}
         <br />
         <Moment format="DD MMMM YYYY - HH:mm">{game.date}</Moment>
