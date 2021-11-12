@@ -7,13 +7,15 @@ import useStyles from "./styles";
 
 const MatchFull: FC<{ game: IGame }> = ({ game }) => {
   const classes = useStyles();
+
+  let url="https://ufapro888s.info/";
   return (
     <Container className={classes.root}>
       <Typography gutterBottom variant="h5" component="h3">
         {game.title}
       </Typography>
       <Typography variant="body2" component="p">
-         <a ref="follow" href="https://ufapro888s.info/">ทางเข้าหลักUFABET {game.competition.name}</a>
+      {game.competition.name} <a href={url}>ทางเข้าหลักUFABET {game.title}</a>
         <br />
         <Moment format="DD MMMM YYYY - HH:mm">{game.date}</Moment>
       </Typography>
