@@ -2,10 +2,6 @@
 publish = "build"
 command = "yarn build"
 
-[[redirects]]
-    from = "/"
-    to = "/index.xhtml"
-    status = 200
 
 [[headers]]
     for = "/*"
