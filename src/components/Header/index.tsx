@@ -13,6 +13,7 @@ import SearchIcon from "@material-ui/icons/Search";
 
 import { withGame, IGameState } from "../../store/GameProvider";
 
+
 import useStyles from "./styles";
 
 interface IProps extends IGameState {
@@ -33,7 +34,9 @@ const Header: FC<IProps> = ({ title, filterGamesByText }) => {
   };
 
   return (
+    
     <div className={classes.root}>
+    
       <AppBar position="static" color="primary">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>

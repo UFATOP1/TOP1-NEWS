@@ -9465,6 +9465,21 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
+react-fast-compare@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz"
+  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
+
+react-helmet@^6.0.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/react-helmet/-/react-helmet-6.1.0.tgz"
+  integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.7.2"
+    react-fast-compare "^3.1.1"
+    react-side-effect "^2.1.0"
+
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -9580,6 +9595,11 @@ react-scripts@^4.0.3:
   optionalDependencies:
     fsevents "^2.1.3"
 
+react-seo-meta-tags@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-seo-meta-tags/-/react-seo-meta-tags-1.2.1.tgz#9ca86820c524dc613604862d9282ee78eb5303f4"
+  integrity sha512-U01mXi2MHEuYo0mLnYVCnKe/9xJSg7L5KX/d4MO8t+08CORCQZTqVVgE55oWRmt6FB0MhZEXkQrO2gio4MUXcw==
+
 react-share@^4.4.0:
   version "4.4.0"
   resolved "https://registry.npmjs.org/react-share/-/react-share-4.4.0.tgz"
@@ -9587,6 +9607,18 @@ react-share@^4.4.0:
   dependencies:
     classnames "^2.2.5"
     jsonp "^0.2.1"
+
+react-side-effect@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz"
+  integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
+
+react-super-seo@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/react-super-seo/-/react-super-seo-1.0.6.tgz"
+  integrity sha512-qAsJaJGhpQjwUkr19Om7OJsluLPl8z0z2u+qHL/q8XGjr0PcJiHRR9JaS1xfBU723xXng9H7aExqfmqanhv7rw==
+  dependencies:
+    react-helmet "^6.0.0"
 
 react-transition-group@^4.4.0:
   version "4.4.1"

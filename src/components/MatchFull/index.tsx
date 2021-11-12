@@ -10,7 +10,9 @@ const MatchFull: FC<{ game: IGame }> = ({ game }) => {
 
   let url="https://ufapro888s.info/";
   return (
+    
     <Container className={classes.root}>
+     
       <Typography gutterBottom variant="h5" component="h3">
         {game.title}
       </Typography>
