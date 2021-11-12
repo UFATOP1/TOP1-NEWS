@@ -49,6 +49,7 @@ const Header: FC<IProps> = ({ title, filterGamesByText }) => {
             </Link>
           </Typography>
           <form className={classes.search} onSubmit={handleSubmit}>
+          
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
